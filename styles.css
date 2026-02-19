@@ -9,6 +9,7 @@ body {
   align-items: center;
   background: black;
   padding: 15px 40px;
+  margin: auto;
 }
 
 .nav-tabs {
@@ -34,9 +35,17 @@ body {
   cursor: pointer;
 }
 
+.mainCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 .main-img {
   background-color: black;
-  height: 400px;
+  min-height: 400px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,13 +68,20 @@ body {
 .midSection {
   display: flex;
   align-items: center;
-  gap: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .midSection-left {
   display: flex;
   align-items: center;
-  flex: 0 0 60%;
+  flex: 1 1 500px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .midSection-left img {
@@ -76,6 +92,7 @@ body {
 .midSection-right {
   width: 100%;
   display: block;
+  flex: 1 1 400px;
 }
 
 .tag {
@@ -113,19 +130,14 @@ body {
   height: 28px;
 }
 
-.mainCard {
-  display: flex;
-  max-width: 100%;
-}
-
 .cardImg img {
   max-width: 500px;
   border-radius: 25px;
 }
 
 .cards {
-  margin-left: 20px;
-  margin-right: 20px;
+  flex: 1 1 320px;
+  max-width: 500px;
 }
 
 .cards h2 {
@@ -146,7 +158,13 @@ body {
 .lastSection {
   display: flex;
   justify-content: space-around;
-  margin: 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.lastCards {
+  flex: 1 1 400px;
+  width: 100%;
 }
 
 .lastSectionImg img {
